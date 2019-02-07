@@ -22,16 +22,18 @@
   var_dump($birth);
   var_dump($document);
   var_dump($documentnumber);
-  
+
 
 
   $sql = "INSERT INTO `ospiti` (`name`, `lastname`, `date_of_birth`, `document_type`, `document_number`)
   VALUES ('$name', '$lastname', '$birth', '$document', '$documentnumber');";
 
-  $conn->close();
 
 
-  var_dump($result); die();
   $result = $conn->query($sql);
+  var_dump($result); die();
+
+
+  $conn->close();
 
 ?>
