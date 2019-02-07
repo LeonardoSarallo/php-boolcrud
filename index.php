@@ -3,6 +3,12 @@
 <?php include 'partials/_navbar.php'  ?>
   <div class="container">
     <h1>Ospiti Hotel</h1>
+    <div class="row">
+      <div class="col-12">
+        <a href="http://localhost/php-boolcrud/create/form.php" class="btn btn-secondary">Inserisci un nuovo ospite</a>
+      </div>
+
+    </div>
     <table class="table">
       <thead>
         <th>ID</th>

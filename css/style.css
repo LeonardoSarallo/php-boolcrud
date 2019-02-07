@@ -46,7 +46,13 @@
 }
 
 h1 {
-  margin: 50px;
+  margin: 40px;
+  color: red;
+}
+
+.btn-secondary {
+  margin-bottom: 15px;
+  background: lightgrey;
   color: red;
 }
 
