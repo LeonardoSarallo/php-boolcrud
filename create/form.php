@@ -7,7 +7,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <form class="form-group">
+          <form class="form-group" method="post" action="http://localhost/php-boolcrud/create/server.php">
             <div class="form-group">
               <label for="name">Inserisci il nome</label>
               <input type="text" class="form-control" name="name" value="">

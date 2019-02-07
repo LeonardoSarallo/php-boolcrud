@@ -1,9 +1,6 @@
 <?php
 
-  $servername = 'localhost';
-  $username = 'root';
-  $password = 'asd';
-  $dbname = 'dbex3';
+  include 'env.php';
 
   $conn = new Mysqli($servername, $username, $password, $dbname);
 
