@@ -4,31 +4,10 @@
 <?php
 
 
-  include '../env.php';
+  include '../function.php';
 
-  $conn = new Mysqli($servername, $username, $password, $dbname);
-
-
-  if ($conn->connect_error)
-  {
-    echo 'errore' . $conn->connect_error;
-  }
-
-  $id = $_GET['id'];
-
-  $sql = "SELECT * FROM `ospiti` WHERE `id` = $id LIMIT 1";
-
-  $result = $conn->query($sql);
-
-
-
-  if ($result->num_rows > 0)
-  {
-    $ospiteshow = $result->fetch_assoc();
-
-  }
-
-
+  $ospiteshow = findOspiteById($_GET['id']);
+  
 ?>
 <div class="container">
   <div class="row">
