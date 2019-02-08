@@ -16,6 +16,7 @@
 
 
   $result = $conn->query($sql);
+  
 
 
 
@@ -24,7 +25,7 @@
     echo 'ok server';
   }
   else {
-    'errore';
+    echo 'errore';
   }
 
 

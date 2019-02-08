@@ -30,14 +30,14 @@
  $result = $conn->query($sql);
 
 
- 
+
 
  if ($result == true)
  {
    echo "ok server";
  }
  else {
-   'errore';
+   echo 'errore';
  }
 
 
