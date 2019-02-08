@@ -14,6 +14,7 @@
         <th>ID</th>
         <th>Nome</th>
         <th>Cognome</th>
+        <th>Visualizza</th>
       </thead>
       <tbody>
       <?php include 'database.php'; ?>
@@ -22,6 +23,10 @@
               <td><?php echo $ospite['id']; ?></td>
               <td><?php echo $ospite['name']; ?></td>
               <td><?php echo $ospite['lastname']; ?></td>
+              <td><a href="http://localhost/php-boolcrud/show/show.php" class="btn btn-primary">
+                Visualizza ospite
+              </a>
+              </td>
             </tr>
       <?php } ?>
       </tbody>

@@ -17,11 +17,10 @@
   $document = $_POST['document_type'];
   $documentnumber = $_POST['document_number'];
 
-  var_dump($name);
-  var_dump($lastname);
-  var_dump($birth);
-  var_dump($document);
-  var_dump($documentnumber);
+  if (empty($name) || empty($lastname) || empty($birth) || empty($document) || empty($documentnumber))
+  {
+    die('errore, compila tutto il form');
+  }
 
 
 
@@ -31,7 +30,14 @@
 
 
   $result = $conn->query($sql);
-  var_dump($result); die();
+
+  if ($result)
+  {
+    echo "ok";
+  }
+  else {
+    'errore';
+  }
 
 
   $conn->close();
