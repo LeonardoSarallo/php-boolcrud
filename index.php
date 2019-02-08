@@ -15,6 +15,7 @@
         <th>Nome</th>
         <th>Cognome</th>
         <th>Visualizza</th>
+        <th>Aggiorna</th>
       </thead>
       <tbody>
       <?php include 'database.php'; ?>
@@ -28,6 +29,9 @@
               <td><a href="http://localhost/php-boolcrud/show/show.php?id=<?php echo $ospite['id']; ?>" class="btn btn-primary">
                 Visualizza ospite
               </a>
+              </td>
+              <td>
+                <a href="http://localhost/php-boolcrud/update/form.php?id=<?php echo $ospite['id']; ?>" class="btn btn-success">Aggiorna Ospite</a>
               </td>
             </tr>
       <?php } ?>

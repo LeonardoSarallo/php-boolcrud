@@ -7,7 +7,11 @@
   include '../function.php';
 
   $ospiteshow = findOspiteById($_GET['id']);
-  
+
+  if (empty($ospiteshow))
+  {
+    echo 'errore';
+  }
 ?>
 <div class="container">
   <div class="row">
