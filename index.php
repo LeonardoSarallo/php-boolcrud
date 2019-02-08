@@ -16,6 +16,7 @@
         <th>Cognome</th>
         <th>Visualizza</th>
         <th>Aggiorna</th>
+        <th>Cancella</th>
       </thead>
       <tbody>
       <?php include 'database.php'; ?>
@@ -32,6 +33,9 @@
               </td>
               <td>
                 <a href="http://localhost/php-boolcrud/update/form.php?id=<?php echo $ospite['id']; ?>" class="btn btn-success">Aggiorna Ospite</a>
+              </td>
+              <td>
+                <a href="http://localhost/php-boolcrud/delete/server.php?id=<?php echo $ospite['id']; ?>" class="btn btn-danger">Cancella Ospite</a>
               </td>
             </tr>
       <?php } ?>
