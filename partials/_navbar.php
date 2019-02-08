@@ -2,7 +2,10 @@
   <div class="container">
     <div class="navbarleft">
       <span>
-        <b>Leonardo's Hotel</b>
+        <a href="http://localhost/php-boolcrud/index.php">
+          <b>Leonardo's Hotel</b>
+        </a>
+
       </span>
     </div>
     <div class="navbarright">

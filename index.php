@@ -18,12 +18,14 @@
       </thead>
       <tbody>
       <?php include 'database.php'; ?>
+
+
       <?php  foreach ($ospiti as $ospite) { ?>
             <tr>
               <td><?php echo $ospite['id']; ?></td>
               <td><?php echo $ospite['name']; ?></td>
               <td><?php echo $ospite['lastname']; ?></td>
-              <td><a href="http://localhost/php-boolcrud/show/show.php" class="btn btn-primary">
+              <td><a href="http://localhost/php-boolcrud/show/show.php?id=<?php echo $ospite['id']; ?>" class="btn btn-primary">
                 Visualizza ospite
               </a>
               </td>
